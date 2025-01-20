@@ -27,7 +27,13 @@ ol {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 120px 15px;
+}
+
+.thumb {
+  display: block;
+  max-width: 100%;
+  overflow: cover;
 }
 
 /* header styles */
@@ -174,13 +180,14 @@ gap: 40px;
   margin-bottom: 8px;
 }
 
-/* BENEFITS SECTION STYLES*/
-.benefits-list {
+/* BENEFITS & TEAM SECTION STYLES*/
+.benefits-list, .team-list {
   display: flex;
-  width: 1128px;
-  gap: 24px;
-  justify-content: space-between;
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  gap: 24px; 
+}
+
+.benefits-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /* TEAM SECTION STYLES */
@@ -196,12 +203,24 @@ gap: 40px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-item {
   background-color: #fff;
+  flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
 }
 
+.team-card {
+  display: box;
+  width: 232px;
+  padding: 32px;
+  justify-content: center;
+}
+
+/* PORTFOLIO SECTION STYLES*/
 .portfolio-header {
   font-weight: 700;
   font-size: 36px;

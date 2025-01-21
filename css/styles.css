@@ -31,7 +31,7 @@ img {
 }
 
 .section {
-  padding: 120px 15px;
+  padding: 120px 0;
 }
 
 /* header styles */
@@ -125,18 +125,22 @@ gap: 40px;
 
 .order-container {
   display: block;
-  padding: 188px;
-  justify-content: center;  
+  padding: 188px 0; 
+  justify-content: center;
 }
 
 .order-header {
+  display: block;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #fff; 
+  color: #fff;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
 }
 
 .order-button {
@@ -145,8 +149,6 @@ gap: 40px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: 169px;
-  height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   font-weight: 500;
@@ -155,6 +157,9 @@ gap: 40px;
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .order-button:hover,
@@ -215,7 +220,7 @@ gap: 40px;
 .team-card {
   display: block;
   width: 232px;
-  padding: 32px;
+  padding: 32px 0;
   justify-content: center;
 }
 
@@ -228,7 +233,7 @@ gap: 40px;
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-set {
@@ -269,8 +274,12 @@ gap: 40px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
-  width: 264px;
+  max-width: 264px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 /* benefits header hide */

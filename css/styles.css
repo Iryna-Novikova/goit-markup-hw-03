@@ -216,11 +216,8 @@ gap: 40px;
 }
 
 .team-card {
-  display: block;
-  width: 232px;
   padding: 32px 0;
-  justify-content: center;
-}
+ }
 
 /* PORTFOLIO SECTION STYLES*/
 .portfolio-header {
